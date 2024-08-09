@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ewan Smith</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h2 class="name" id="title">Ewan Smith</h2>
+    <nav class="navigation">
+      <a href="#" class="active" id="home-link">Home</a>
+      <a href="#projects" id="project-link">Projects</a>
+      <a href="#skills" id="skill-link">Skills</a>
+      <a href="#contact" id="contact-link">Contact</a>
+      <a href="resume.pdf"  target="_blank" id="resume-link">Resume</a>
+    </nav>
+  </header>
+  <section class="parallax" id="home">
+    <img src="hill1.png" id="hill1">
+    <img src="hill2.png" id="hill2">
+    <img src="hill3.png" id="hill3">
+    <img src="hill4.png" id="hill4">
+    <img src="hill5.png" id="hill5">
+    <img src="tree.png" id="tree">
+    <h2 id="text"><span class="auto-type"></span></h2>
+    <p class="description" id="description">Hi, I'm Ewan! I'm currently pursuing my B.S. in Computer Engineering at Texas A&M with a minor in mathematics.<br>
+    <br>I'm experienced in full-stack web development, machine learning, data science, and databases, and I'm currently looking for Summer 2025 Software Engineering roles.</p>
+    <img src="leaf.png" id="leaf">
+    <img src="plant.png" id="plant">
+  </section>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-item">
+        <p>Movie Recommender App</p>
+        <img src="movie.jpg" id="movie" alt="Movie Recommender App">
+        <div class="overlay"> Uses user data and past reviews along with the pandas and sci-kit learn libraries to deliver accurate recommendations for the user.<br> Implements Flask for the backend and javascript + HTML/CSS for the frontend.
+          <div class="icons">
+            <a href="https://shopping-cart-393b1b.netlify.app/" target="_blank"><img class="icon" src="world.png" width="30" height="30"></a>
+            <a href="https://github.com/EwanSmith811/ShoppingCart" target="_blank"><img class="icon" src="github.png" width="30" height="30"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <p>Firebase Shopping Cart</p>
+        <img src="shopping.png" id="shopping" alt="Firebase Shopping List">
+        <div class="overlay">Uses user data and past reviews along with the pandas and sci-kit learn libraries to deliver accurate recommendations for the user.<br> Integrates Firebase API with javascript + HTML/CSS for the frontend.
+          <div class="icons">
+            <a href="https://shopping-cart-393b1b.netlify.app/" target="_blank"><img class="icon" src="world.png" width="30" height="30"></a>
+            <a href="https://github.com/EwanSmith811/ShoppingCart" target="_blank"><img class="icon" src="github.png" width="30" height="30"></a>
+          </div></div>
+      </div>
+      <div class="project-item">
+        <p>AWS File Storage</p>
+        <img src="AWS.png" id="AWS" alt="AWS File Storage">
+        <div class="overlay"> Allows user to store files an an AWS S3 bucket, utilizing REST API's and a login system. Uses React.js and Springboot. 
+          <div class="icons">
+            <a href="https://shopping-cart-393b1b.netlify.app/" target="_blank"><img class="icon" src="world.png" width="30" height="30"></a>
+            <a href="https://github.com/EwanSmith811/ShoppingCart" target="_blank"><img class="icon" src="github.png" width="30" height="30"></a>
+          </div>
+        </div>
+      </div>
+      <div class="project-item">
+        <p>AI Stock Predictor</p>
+        <img src="stocks.png" id="stocks" alt="AI Stock Predictor">
+        <div class="overlay"> Integrates yfinance API to gather past data on stocks with sci-kit learn and pandas to make accurate predictions about the stop market.<br> Constructs a Random Forest Model and a Backtracking method to increase model robustness 
+          <div class="icons">
+            <a href="https://shopping-cart-393b1b.netlify.app/" target="_blank"><img class="icon" src="world.png" width="30" height="30"></a>
+            <a href="https://github.com/EwanSmith811/ShoppingCart" target="_blank"><img class="icon" src="github.png" width="30" height="30"></a>
+          </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+      <div class="skill-carousel">
+        <div class="skill-item"><img src="java.png" alt="Skill 1"></div>
+        <div class="skill-item"><img src="python.png" alt="Skill 2"></div>
+        <div class="skill-item"><img src="spring.png" alt="Skill 3"></div>
+        <div class="skill-item"><img src="front.png" alt="Skill 4"></div>
+        <div class="skill-item"><img src="react.png" alt="Skill 5"></div>
+        <div class="skill-item"><img src="AWS.png" alt="Skill 6"></div>
+        <div class="skill-item"><img src="SQL.png" alt="Skill 7"></div>
+        <div class="skill-item"><img src="pandas.png" alt="Skill 8"></div>
+        <div class="skill-item"><img src="javascript.png" alt="Skill 9"></div>
+        <div class="skill-item"><img src="scikit.png" alt="Skill 10"></div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+      <input type="email" id="email" name="user_email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="status"></p>
+  </section>  
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto-type", {
+        strings: ["Hi, I'm Ewan"],
+        typeSpeed: 40,
+        loop: false
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+<footer>
+  Ewan Smith 2024
+</footer>
+</html>
